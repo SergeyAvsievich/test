@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link:hover {
+  color: #F2E1C2;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bebas Neue';
+  text-transform: uppercase;
+}
+
+/* header start */
+.navbar {
+  margin-top: 60px;
+  z-index: 1;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar div ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  color: #F2E1C2;
+}
+
+.navbar div ul li {
+  margin-right: 30px;
+}
+
+.navbar div ul li a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar div .bay-tickets {
+  width: 179px;
+  height: 40px;
+  background: #F2E1C2;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/* header end */
+.modal-content {
+  background: #F2E1C2;
+  padding: 100px 120px 120px;
+}
+
+.m-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.m-header h2 {
+  font-size: 5vw;
+}
+
+.m-header .close-btn {
+  width: 25px;
+  height: 20px;
+  color: #F2E1C2;
+  background-color: #262526;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  align-content: center;
+  line-height: 20px;
+}
+
+.m-body {
+  margin-top: 80px;
+}
+
+.m-body input {
+  margin-top: 15px;
+  width: 100%;
+  background: #F2E1C2;
+  border: none;
+  border-bottom: 1px solid #262526;
+}
+
+.m-body button {
+  width: 100%;
+  text-transform: uppercase;
+  color: #F2E1C2;
+  background-color: #262526;
+}
+
+/* main start */
+.scene {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+}
+
+.layer {
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 170%;
+  height: 100%;
+}
+
+.bg-img {
+  background: url("/img/bg.png") center no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.smoke {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+}
+
+.smoke-img {
+  background: url("/img/smoke.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 300%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  transition: all 5s ease-in;
+}
+
+.content {
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .vector-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.content .vector-group .vector {
+  height: 20vw;
+  width: 0.15vw;
+}
+
+.content .vector-group .ellipse {
+  width: 0.5vw;
+  height: 0.5vw;
+}
+
+.content span {
+  font-size: 2vw;
+  color: #F23207;
+  text-transform: uppercase;
+}
+
+.content .video-in-text {
+  display: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content .video-in-text video {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: hue;
+}
+
+.content .video-in-text h2 {
+  font-size: 25vw;
+  padding-top: 3vw;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #F2E1C2;
+  line-height: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .navbar div {
+    justify-content: center;
+    background: #262526;
+    padding: 15px;
+    align-items: start;
+  }
+  .navbar div .fa-bars {
+    font-size: 25px;
+    color: red;
+  }
+  .modal-content {
+    background: #F2E1C2;
+    padding: 20px 25px 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

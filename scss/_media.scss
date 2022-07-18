@@ -1,0 +1,18 @@
+@media (max-width: 991px) {
+    .navbar div {
+        justify-content: center;
+        background: $black-color;
+        padding: 15px;
+        align-items: start;
+
+        .fa-bars {
+            font-size: 25px;
+            color: red;
+        }
+    }
+
+    .modal-content {
+        background: $brown-color;
+        padding: 20px 25px 20px;
+    }
+}
